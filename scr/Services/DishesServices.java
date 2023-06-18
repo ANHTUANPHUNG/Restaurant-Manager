@@ -9,7 +9,7 @@ public class DishesServices {
     List<Menu> dishesMenu = new ArrayList<>();
 
     public DishesServices() {
-    }
+    };
 
     public List<Menu> getDishesMenu()
     {

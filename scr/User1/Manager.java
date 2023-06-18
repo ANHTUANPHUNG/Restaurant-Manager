@@ -10,23 +10,20 @@ public class Manager extends User {
     private String addEmployee;
     private String deletaDishes;
     private String addDishes;
-    private  String changRole; // thay đổi vai trò
+    private String changRole; // thay đổi vai trò
     private String assessment; //đánh giá
 
-    public Manager(int id, String userName, String password, String dob, String address, long phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount, int salary, int timeKeeping, String deleteEmployee, String addEmployee, String deletaDishes, String addDishes, String changRole, String assessment) {
+    public Manager(int id, String userName, String password, String dob, String address, long phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount, int salary) {
         super(id, userName, password, dob, address, phone, gender, literacy, citizenIdentification, role, typeAccount);
         this.salary = salary;
-        this.timeKeeping = timeKeeping;
-        this.deleteEmployee = deleteEmployee;
-        this.addEmployee = addEmployee;
-        this.deletaDishes = deletaDishes;
-        this.addDishes = addDishes;
-        this.changRole = changRole;
-        this.assessment = assessment;
+
     }
 
     public Manager(int id, String userName, String password, String dob, String address, long phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount) {
         super(id, userName, password, dob, address, phone, gender, literacy, citizenIdentification, role, typeAccount);
+    }
+
+    public Manager(int id, String sad, String number, String number1, String number2, int phone, String number3, String number4, String number5, String number6, String hashtag) {
     }
 
     public int getSalary() {
@@ -93,18 +90,5 @@ public class Manager extends User {
         this.assessment = assessment;
     }
 
-    @Override
-    public String toString() {
-        return "Manager{" +
-                "salary=" + salary +
-                ", timeKeeping=" + timeKeeping +
-                ", deleteEmployee='" + deleteEmployee + '\'' +
-                ", addEmployee='" + addEmployee + '\'' +
-                ", deletaDishes='" + deletaDishes + '\'' +
-                ", addDishes='" + addDishes + '\'' +
-                ", changRole='" + changRole + '\'' +
-                ", assessment='" + assessment + '\'' +
-                '}';
-    }
-}
 
+}

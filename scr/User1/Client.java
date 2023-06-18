@@ -33,11 +33,5 @@ public class Client extends User {
         this.assessment = assessment;
     }
 
-    @Override
-    public String toString() {
-        return "Client{" +
-                "order='" + order + '\'' +
-                ", assessment='" + assessment + '\'' +
-                '}';
-    }
+
 }

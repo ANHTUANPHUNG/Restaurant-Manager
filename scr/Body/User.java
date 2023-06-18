@@ -133,6 +133,6 @@ public abstract class User {
                 " trình độ học vấn:" + literacy  +"\n"+
                 " mã căn cước:" + citizenIdentification +"\n"+
                 " chức vụ:" + role  +"\n"+
-                " loại tài khoản:" + typeAccount  ;
+                " loại tài khoản:" + typeAccount +"\n"  ;
     }
-}
+    }

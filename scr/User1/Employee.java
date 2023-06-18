@@ -13,6 +13,7 @@ public class Employee extends User {
     public Employee(int id, String userName, String password, String dob, String address, int phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount) {
         super(id, userName, password, dob, address, phone, gender, literacy, citizenIdentification, role, typeAccount);
         this.salary=salary;
+
     }
 
     public int getSalary() {
@@ -63,15 +64,5 @@ public class Employee extends User {
         this.timeKeeping = timeKeeping;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "salary=" + salary +
-                ", deletaDishes='" + deletaDishes + '\'' +
-                ", addDishes='" + addDishes + '\'' +
-                ", joinTables='" + joinTables + '\'' +
-                ", moveTable='" + moveTable + '\'' +
-                ", timeKeeping=" + timeKeeping +
-                '}';
-    }
+
 }
