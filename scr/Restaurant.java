@@ -18,9 +18,11 @@ public class Restaurant {
         users.addNewUser(anhtuan);
 //        System.out.println("Thông tin của các người dùng:");
 //        System.out.println(users.getUserList().toString());
-//        Manager update = new Manager(1,"3534","345","435","34534",34543534,"34534","43534",435345,"34534","34534");
-//        users.updateUser(1,update);
-        System.out.println(users.getUserById(1));
+        Manager update = new Manager(1,"3534","345","435","34534",34543534,"34534","43534",435345,"34534","34534");
+        users.updateUser(1,update);
+        System.out.println(users.getUserList());
+        users.removeUser(2);
+        System.out.println(users.getUserList());
 //        System.out.println(users.getUserList().toString());
 //        Menu as = new Menu(1,"545",54,54, new String[]{"đá", "sadsa"},"324");
 //        Menu bs = new Menu(1,"545",54,54, new String[]{"353", "3534"},"54");

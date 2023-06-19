@@ -17,7 +17,7 @@ public class Login {
         String userName = getString("nhập tài khoản");
         String passWord = getString("nhập mật khẩu");
         UserServices users = new UserServices();
-        if (userName.equals(users.userName) && passWord.equals(users.passWord)) {
+        if (userName.equals("abc") && passWord.equals("abc")) {
             trangthai = true;
         }
         return trangthai;
