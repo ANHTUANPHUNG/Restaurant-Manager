@@ -2,13 +2,16 @@ package scr.Body;
 
 import java.util.Arrays;
 
-public class Menu {
-    private int id;
-    private String name;
-    private int price;
-    private int quantity;
-    private String[] detail;
-    private String status;
+public abstract class Menu {
+    protected int id;
+    protected String name;
+    protected int price;
+    protected int quantity;
+    protected String[] detail;
+    protected String status;
+
+    public Menu() {
+    }
 
     public Menu(int id, String name, int price, int quantity, String[] detail, String status) {
         this.id = id;

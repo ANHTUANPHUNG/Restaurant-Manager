@@ -16,6 +16,7 @@ public class Employee extends User {
 
     }
 
+
     public int getSalary() {
         return salary;
     }

@@ -7,6 +7,9 @@ public class Client extends User {
     private String order;
     private String assessment;
 
+    public Client() {
+    }
+
     public Client(int id, String userName, String password, String dob, String address, long phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount, String order, String assessment) {
         super(id, userName, password, dob, address, phone, gender, literacy, citizenIdentification, role, typeAccount);
         this.order = order;
@@ -16,6 +19,9 @@ public class Client extends User {
     public Client(int id, String userName, String password, String dob, String address, long phone, String gender, String literacy, long citizenIdentification, String role, String typeAccount) {
         super(id, userName, password, dob, address, phone, gender, literacy, citizenIdentification, role, typeAccount);
     }
+
+
+
 
     public String getOrder() {
         return order;
