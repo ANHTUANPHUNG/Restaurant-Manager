@@ -31,11 +31,6 @@ public class Register {
                 System.err.println("Tài khoản đã tồn tại:");
                 System.out.println("1.Nếu muốn tiếp tục.");
                 System.out.println("0.Nếu bạn muốn quay lại màn hình chính.");
-
-            } else if (!checkUser(userName)) {
-                System.err.println("Tài khoản không hợp lệ:");
-                System.out.println("1.Nếu muốn tiếp tục.");
-                System.out.println("0. Nếu bạn muốn quay lại màn hình chính.");
                 int luachon = sc.nextInt();
                 sc.nextLine();
                 while (condition){
@@ -66,8 +61,12 @@ public class Register {
                     }
                     break;
                 }
-            }
-            else {
+            } else if (!checkUser(userName)) {
+                System.err.println("Tài khoản không hợp lệ:");
+                System.out.println("1.Nếu muốn tiếp tục.");
+                System.out.println("0. Nếu bạn muốn quay lại màn hình chính.");
+                userName = getString("Nhập lại tên tài khoản: tài khoản gồm 8 kí tự lên và phải là chữ cái:");
+            } else {
                 break;
             }
         }
@@ -139,7 +138,6 @@ public class Register {
         return c;
 
     }
-
 //    check tên đăng nhập
     public static boolean checkUser(String userName) {
         boolean isletter = false;
