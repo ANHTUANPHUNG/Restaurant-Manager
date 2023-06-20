@@ -30,7 +30,7 @@ public class Login {
                 adminMenu();
                 break;
             }
-            if(user.getUserName().equals(userName) && user.getPassword().equals(passWord) && user.getRole().equals("Nhân viên")){
+            if(user.getUserName().equals(userName) && user.getPassword().equals(passWord) && user.getRole().equals("Nhân viên phục vụ")){
                 trangthai=true;
                 EmployeeMenu();
                 break;
@@ -90,10 +90,14 @@ public class Login {
                 }break;
                 case 2: {
                     Client newClient = dangky();
-                    System.out.println("Đăng kí thành công.");
-                    UserServices users = UserServices.getInstance();
-                    users.addNewUser(newClient);
-                    }break;
+                    if(newClient != null) {
+                        System.out.println("Đăng kí thành công.");
+                        UserServices users = UserServices.getInstance();
+                        users.addNewUser(newClient);
+                        break;
+                    }
+                    break;
+                }
                 default:
                     System.out.println("Bạn nhập kí tự không hợp lệ, mời nhập lại:");
                     menu();

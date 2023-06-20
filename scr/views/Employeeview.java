@@ -1,5 +1,7 @@
 package scr.views;
 
+import java.util.Scanner;
+
 public class Employeeview {
     public static void EmployeeMenu() {
         System.out.println("Chào mừng nhân viên yêu quý");
@@ -9,4 +11,5 @@ public class Employeeview {
         System.out.println("0. Trở về trang đăng nhập");
         System.out.println("Mời chọn chức năng:");
     }
+
 }
