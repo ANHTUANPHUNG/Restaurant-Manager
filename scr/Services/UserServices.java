@@ -48,7 +48,7 @@ public class UserServices {
             }
         }
     }
-    public void updateUser(int id, User updatedUser) {
+        public void updateUser(int id, User updatedUser) {
         for (int i = 0; i < userList.size(); i++) {
             User user = userList.get(i);
             if (user.getId() == id) {
